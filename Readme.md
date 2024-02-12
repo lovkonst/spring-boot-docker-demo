@@ -14,3 +14,6 @@ docker build -t spring/demo . - с указанным именем
 * docker network connect spring-boot-network some-postgres - присоединить уже запущенный контейнер "some-postgres" к сети
 * docker run -p 8088:8080 --net spring-boot-network spring/demo - развернуть образ "spring/demo" в конкретной сети и сделать проброс портов
 
+## Тестирование запуска spring-boot приложения с БД Postgres через docker-compose
+docker-compose up - запустить все контейнеры. Можно добавить '-d' и запустится в detached режиме
+docker-compose down - остановить и удалить контейнеры
